@@ -1,4 +1,14 @@
 #!/bin/sh
+# LLDB installation script for FreeBSD 10.1 STABLE
+# LLDB is yet not available in FreeBSD ports/packages, so we have to fetch 
+# it from the LLVM source tree and build it ouselves. 
+# Prerequisite packages, which must be installed prior to running this script:
+# git python cmake ninja swig13
+# 
+# You can intall the tools by running (as root):
+# pkg install git python cmake ninja swig13
+# 
+
 GIT=/usr/local/bin/git
 CMAKE=/usr/local/bin/cmake
 NINJA=/usr/local/bin/ninja
